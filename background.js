@@ -5,6 +5,9 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
         if (current.match(/isitchristmas\.com/)) {
             chrome.browserAction.setIcon({"path":"yes.png"});
             chrome.browserAction.setTitle({"title":"This is isitchristmas.com"});
+        } else if (current.match(/github\.com\/isitchristmas/)) {
+            chrome.browserAction.setIcon({"path":"sortof.png"});
+            chrome.browserAction.setTitle({"title":"This is sort of isitchristmas.com"});
         } else {
             chrome.browserAction.setIcon({"path":"no.png"});
             chrome.browserAction.setTitle({"title":"This is not isitchristmas.com"});
@@ -20,6 +23,9 @@ chrome.tabs.onActivated.addListener(function(activeInfo) {
         if (current.match(/isitchristmas\.com/)) {
             chrome.browserAction.setIcon({"path":"yes.png"});
             chrome.browserAction.setTitle({"title":"This is isitchristmas.com"});
+        } else if (current.match(/github\.com\/isitchristmas/)) {
+            chrome.browserAction.setIcon({"path":"sortof.png"});
+            chrome.browserAction.setTitle({"title":"This is sort of isitchristmas.com"});
         } else {
             chrome.browserAction.setIcon({"path":"no.png"});
             chrome.browserAction.setTitle({"title":"This is not isitchristmas.com"});
